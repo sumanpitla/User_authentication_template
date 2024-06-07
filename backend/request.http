@@ -1,0 +1,42 @@
+get http://localhost:4500/userApi/get-users
+
+###
+
+get http://localhost:4500/userApi/test
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlZhcnVuIiwiaWF0IjoxNjg2NzY0NzIzLCJleHAiOjE2ODY3NjQ3NDN9.fQlBVP1VZgamXTY4N1Wn415zWJeLBGCy1XvwFpSte4g
+
+###
+post http://localhost:4500/userApi/post-user
+Content-Type: application/json
+
+{
+    "username":"akash",
+    "password":"akash",
+    "email":"akash@gmail.com"
+}
+
+###
+
+post http://localhost:4500/userApi/login
+Content-Type: application/json
+
+{
+    "username":"Varun",
+    "password":"Varun"
+}
+
+
+###
+DELETE  http://localhost:4500/userApi/delete-user/100
+
+###
+
+put http://localhost:4500/userApi/update-user
+Content-Type: application/json
+
+{
+    "id":100,
+    "name":"Varun ",
+    "age":"21"
+    
+}
